@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+*,*::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.l-container{
+    width: 1240px;
+}
+@media all and (max-width: 1239px){
+    .l-container{
+        width: 1080px;
+    }
+}
+
+@media all and (max-width: 1079px) {
+    .l-container {
+        width: 960px;
+    }
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+app-modal {
+    /* modals are hidden by default */
+    display: none;
+}
+
+body.modal-open {
+    /* body overflow is hidden to hide main scrollbar when modal window is open */
+    overflow: hidden;
+}
